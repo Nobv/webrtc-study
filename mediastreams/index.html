@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Media Capture and Streams API study</title>
+
+    <style>
+      canvas {
+        display: none;
+        width: 100%;
+        height: 100%;
+      }
+      video {
+        width: 100%;
+        height:100%;
+      }
+      img {
+        width: 100%;
+        height:100%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Media Capture and Streams API</legend>
+      <video autoplay></video>
+      <select id="facing-mode">
+        <option value="user">front</option>
+        <option value="environment">back</option>
+      </select>
+      <button id="camera">カメラ起動</button>
+      <button id="snapshot">撮影</button>
+      <button id="stop">終了</button>
+
+    </fieldset>
+    <fieldset>
+      <legend>Result</legend>
+      <img/>
+      <canvas></canvas>
+    </fieldset>
+    <script src="index.js"></script>
+  </body>
+</html>
